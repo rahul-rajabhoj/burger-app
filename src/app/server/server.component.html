@@ -1,1 +1,3 @@
-<p>server works!</p>
+<app-cockpit (addServer)="addServer($event)" (addBlueprint)="addBlueprint($event)"></app-cockpit>
+
+<app-server-element *ngFor="let serverElement of serverElements" [element]=serverElement></app-server-element>

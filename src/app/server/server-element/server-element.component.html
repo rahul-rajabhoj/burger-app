@@ -1,0 +1,7 @@
+<div class="list-group m5">
+    <div class="list-group-item">
+        <h3>{{ element.serverName }}</h3>
+        <p *ngIf="element.type == 'server'" style="color:red;"><strong>{{ element.serverContent }}</strong></p>
+        <p *ngIf="element.type == 'blueprint'" ><em>{{ element.serverContent }}</em></p>
+    </div>
+</div>
